@@ -1,50 +1,90 @@
-# React + TypeScript + Vite
+# Todo List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Descrição
+Uma aplicação de lista de tarefas (Todo List) desenvolvida com React e TypeScript, permitindo aos usuários gerenciar suas tarefas diárias de forma eficiente.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
+- Adicionar novas tarefas
+- Marcar tarefas como concluídas
+- Remover tarefas
+- Persistência de dados no localStorage
+- Interface responsiva e amigável
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologias Utilizadas
+- React.js
+- TypeScript
+- CSS Modules
+- Vite
+- LocalStorage para persistência de dados
 
-## Expanding the ESLint configuration
+## 📋 Pré-requisitos
+- Node.js (versão 14 ou superior)
+- npm ou yarn
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## ⚙️ Instalação
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone o repositório:
+```bash
+git clone https://github.com/LLucas-Melo/Todo.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Acesse a pasta do projeto:
+```bash
+cd Todo
 ```
+
+3. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
+
+4. Execute o projeto:
+```bash
+npm run dev
+# ou
+yarn dev
+```
+
+## 💻 Como Usar
+1. Digite sua tarefa no campo de input
+2. Pressione Enter ou clique no botão de adicionar
+3. Para marcar uma tarefa como concluída, clique no checkbox ao lado da tarefa
+4. Para remover uma tarefa, clique no ícone de lixeira
+
+## 🔰 Estrutura do Projeto
+```
+Todo/
+├── src/
+│   ├── components/
+│   │   ├── Header/
+│   │   ├── Task/
+│   │   └── TaskList/
+│   ├── styles/
+│   └── App.tsx
+├── public/
+└── package.json
+```
+
+## 🤝 Contribuindo
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## ✅ Melhorias Futuras Sugeridas
+- Implementar filtros de tarefas (todas, ativas, concluídas)
+- Adicionar categorias para as tarefas
+- Implementar sistema de prioridades
+- Adicionar data de vencimento para as tarefas
+- Implementar sistema de busca
+- Adicionar testes automatizados
+
+## 📄 Licença
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👤 Autor
+Lucas Melo
+- GitHub: [@LLucas-Melo](https://github.com/LLucas-Melo)
